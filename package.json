@@ -1,0 +1,33 @@
+{
+  "name": "namaste-react-practice",
+  "version": "1.0.0",
+  "description": "This is Namaste React by Akshay Saini",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandeeprana19/namaste-react-practice.git"
+  },
+  "keywords": [],
+  "author": "Akshay Saini",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sandeeprana19/namaste-react-practice/issues"
+  },
+  "homepage": "https://github.com/sandeeprana19/namaste-react-practice#readme",
+  "devDependencies": {
+    "parcel": "^2.13.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.3"
+  },
+  "browserslist": [
+    "last 4 versions"
+  ]
+}
