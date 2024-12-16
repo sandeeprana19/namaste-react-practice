@@ -1,13 +1,12 @@
-import { useState } from "react";
 import ItemList from "./ItemList";
 
-const RestaurantCategory = ({ data, showItems, setShowItems }) => {
+const RestaurantCategory = ({ data, showItems, setShowIndex }) => {
   const handleClick = () => {
-    setShowItems();
+    setShowIndex();
   };
 
   return (
-    <div className="w-6/12 mx-auto my-4 p-4 shadow-lg">
+    <div className="w-6/12 mx-auto my-4 p-4 shadow-lg bg-gray-100">
       <div
         className="flex justify-between cursor-pointer"
         onClick={handleClick}
