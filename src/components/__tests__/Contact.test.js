@@ -24,7 +24,7 @@ describe("Contact Us Page Test Cases", () => {
   it("Should load 2 input boxes on the contact component", () => {
     render(<Contact />);
     const inputName = screen.getAllByRole("textbox");
-    console.log(inputName.length);
+    // console.log(inputName.length);
     expect(inputName.length).toBe(2);
   });
 });
