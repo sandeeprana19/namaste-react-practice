@@ -1,12 +1,16 @@
-import { StrictMode } from "react";
+import { StrictMode, Suspense, lazy } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AppLayout from "./App";
-import About from "./components/About";
 import Contact from "./components/Contact";
 import Error from "./components/Error";
 import Body from "./components/Body";
+import RestaurantMenu from "./components/RestaurantMenu";
+import ShimmerUI from "./components/ShimmerUI";
+
+const About = lazy(() => import("./components/About"));
+const Grocery = lazy(() => import("./components/Grocery"));
 
 const appRouter = createBrowserRouter([
   {
@@ -19,11 +23,27 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/about",
-        element: <About />,
+        element: (
+          <Suspense fallback={<ShimmerUI />}>
+            <About />
+          </Suspense>
+        ),
       },
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/restaurants/:resId",
+        element: <RestaurantMenu />,
+      },
+      {
+        path: "/grocery",
+        element: (
+          <Suspense fallback={<ShimmerUI />}>
+            <Grocery />
+          </Suspense>
+        ),
       },
     ],
     errorElement: <Error />,
