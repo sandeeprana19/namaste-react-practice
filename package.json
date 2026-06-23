@@ -1,0 +1,27 @@
+{
+  "name": "namaste-react-practise",
+  "version": "1.0.0",
+  "description": "This is Namaste React Practise Playground",
+  "homepage": "https://github.com/sandeeprana19/namaste-react-practice#readme",
+  "bugs": {
+    "url": "https://github.com/sandeeprana19/namaste-react-practice/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandeeprana19/namaste-react-practice.git"
+  },
+  "license": "ISC",
+  "author": "Sandeep Rana",
+  "type": "commonjs",
+  "scripts": {},
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  },
+  "browserslist": [
+    "last 10 version"
+  ]
+}
